@@ -4,9 +4,11 @@ training documentation of applications in js
 
 
 ```
-$ yarn or npm install
+# install dependencies 
+$ yarn
 
-$ yarn run jsdoc or npm run jsdoc
+# doc generator with jsdoc
+$ yarn run jsdoc
 ```
 
 url doc: https://github.com/iamleoanjos/jsdoc-example/blob/main/docs/jsdoc/index.html
