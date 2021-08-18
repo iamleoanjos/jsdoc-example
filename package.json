@@ -1,0 +1,14 @@
+{
+  "name": "jsdoc-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:iamleoanjos/jsdoc-example.git",
+  "author": "ANTONIO LEONARDO ANJOS DOS SANTOS <antonio.santos@maxxidata.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-doc": "jsdoc -c jsdoc.json -r ."
+  },
+  "devDependencies": {
+    "jsdoc": "^3.6.7"
+  }
+}
