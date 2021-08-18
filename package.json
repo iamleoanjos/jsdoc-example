@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:iamleoanjos/jsdoc-example.git",
-  "author": "ANTONIO LEONARDO ANJOS DOS SANTOS <antonio.santos@maxxidata.com>",
+  "author": "ANTONIO LEONARDO ANJOS DOS SANTOS <leonardo.anjos@maxxidata.com>",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
