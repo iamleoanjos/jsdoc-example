@@ -6,9 +6,12 @@
   "author": "ANTONIO LEONARDO ANJOS DOS SANTOS <antonio.santos@maxxidata.com>",
   "license": "MIT",
   "scripts": {
-    "build-doc": "jsdoc -c jsdoc.json -r ."
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsdoc": "jsdoc -a all -c jsdoc.json -r -R README.md index.js -d docs/jsdoc && jsdoc2md --files index.js > docs/API.md"
   },
   "devDependencies": {
-    "jsdoc": "^3.6.7"
+    "docdash": "^1.2.0",
+    "jsdoc": "^3.6.7",
+    "jsdoc-to-markdown": "^7.0.1"
   }
 }
