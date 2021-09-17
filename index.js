@@ -84,15 +84,6 @@ const api = module.exports = {
          * @param {Pets.Pet} pet - The pet.
          * @returns {Promise<Transactions.TransactionResponse>} Details about the transaction.
          * @example
-         * const sdk = require('pet-adoption-center');
-         *
-         * const transaction = sdk.pets.register({
-         *     name: 'Atticus',
-         *     type: sdk.PET_TYPES.DOG,
-         *     breed: sdk.DOG_BREEDS.FRENCH_BULLDOG,
-         *     dateOfBirth: '2010-03-10',
-         *     neutered: false
-         * });
          */
         register: async function (pet) {
             return {
@@ -112,28 +103,6 @@ const api = module.exports = {
          * @param {Supporters.Supporter} options.supporter - The supported who adopts the pet.
          * @returns {Transactions.TransactionResponse} Details about the transaction.
          * @example
-         * const sdk = require('pet-adoption-center');
-         *
-         * // Register a pet
-         * const registerTx = await sdk.pets.register({
-         *     name: 'Atticus',
-         *     type: sdk.PET_TYPES.DOG,
-         *     breed: sdk.DOG_BREEDS.FRENCH_BULLDOG,
-         *     dateOfBirth: '2010-03-10',
-         *     neutered: false
-         * });
-         *
-         * // Enroll a supporter
-         * const enrollTx = await sdk.supporters.enroll({
-         *     name: 'Atticus',
-         *     type: sdk.PET_TYPES.DOG,
-         *     breed: sdk.DOG_BREEDS.FRENCH_BULLDOG,
-         *     dateOfBirth: '2010-03-10',
-         *     neutered: false
-         * });
-         *
-         * // It's a match!
-         * const adoptTx = sdk.pets.adopt({ pet: registerTx.data, supporter: enrollTx.data });
          */
         adopt: function ({ pet, supporter }) {
             return {
@@ -153,13 +122,6 @@ const api = module.exports = {
          * @param {Supporters.Supporter} supporter - The supporter.
          * @returns {Transactions.TransactionResponse} Details about the transaction.
          * @example
-         * const sdk = require('pet-adoption-center');
-         *
-         * const transaction = sdk.supporters.enroll({
-         *     firstName: 'Atticus',
-         *     lastName: sdk.PET_TYPES.DOG,
-         *     dateOfBirth: '1983-01-01'
-         * });
          */
         enroll: function (supporter) {
             return {
